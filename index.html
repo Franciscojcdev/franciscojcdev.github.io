@@ -363,6 +363,88 @@
       color: var(--accent);
     }
 
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .project-card {
+      background: var(--surface);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      transition: background 0.2s;
+    }
+
+    .project-card:hover { background: #161616; }
+
+    .project-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .project-icon { font-size: 2rem; }
+
+    .project-links {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .project-link {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+
+    .project-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .project-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .project-desc {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--border);
+      color: var(--accent2);
+      border-color: var(--accent2);
+      border-radius: 2px;
+      opacity: 0.7;
+    }
+
     /* CONTACT */
     .contact-grid {
       display: grid;
@@ -452,6 +534,7 @@
     <div class="nav-logo">FJC · Portfolio</div>
     <ul class="nav-links">
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -594,6 +677,55 @@
             <li>Built monthly reporting frameworks with cost analysis for executive decision-making</li>
             <li>Supported strategic decisions on machinery investments and operational costs</li>
           </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">What I've built</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🤖</div>
+          <div class="project-links">
+            <a href="https://github.com/Franciscojcdev/ai-news-digest-n8n" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-title">AI News Digest — Daily Automated Summary</div>
+        <p class="project-desc">
+          Automated workflow that fetches daily AI & tech news from 3 RSS feeds (Hacker News, VentureBeat, MIT Tech Review), analyzes them with Claude AI, and delivers a curated 7-story digest to your inbox every morning at 7am.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">n8n</span>
+          <span class="project-tag">Claude AI</span>
+          <span class="project-tag">RSS</span>
+          <span class="project-tag">Gmail API</span>
+          <span class="project-tag">Railway</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">📊</div>
+          <div class="project-links">
+            <a href="https://github.com/Franciscojcdev/kpi-report-generator-n8n" target="_blank" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-title">KPI Operations Report Generator</div>
+        <p class="project-desc">
+          On-demand workflow that reads monthly KPI data from Google Sheets, sends it to Claude AI for deep analysis, and generates a professional executive HTML report — including trends, anomalies and actionable recommendations — delivered by email.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">n8n</span>
+          <span class="project-tag">Claude AI</span>
+          <span class="project-tag">Google Sheets</span>
+          <span class="project-tag">Gmail API</span>
+          <span class="project-tag">Railway</span>
         </div>
       </div>
 
