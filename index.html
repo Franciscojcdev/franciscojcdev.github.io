@@ -10,7 +10,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://franciscojcdev.github.io/"/>
   <meta property="og:title" content="Francisco Castro · AI Automation Consultant"/>
-  <meta property="og:description" content="Building AI-powered workflows for business operations. n8n, Claude API, Python, and Power BI."/>
+  <meta property="og:description" content="Building AI systems for business operations. Python, Claude API, agents with tool use, n8n and Power BI."/>
   <meta property="og:image" content="https://franciscojcdev.github.io/preview.jpg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://franciscojcdev.github.io/"/>
   <meta name="twitter:title" content="Francisco Castro · AI Automation Consultant"/>
-  <meta name="twitter:description" content="Building AI-powered workflows for business operations. n8n, Claude API, Python, and Power BI."/>
+  <meta name="twitter:description" content="Building AI systems for business operations. Python, Claude API, agents with tool use, n8n and Power BI."/>
   <meta name="twitter:image" content="https://franciscojcdev.github.io/preview.jpg"/>
 
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -565,9 +565,9 @@
     <div class="hero-tag">Available for remote opportunities</div>
     <h1>Francisco<span>Castro.</span></h1>
     <p class="hero-desc">
-      AI Automation Consultant building AI-powered workflows for business operations.<br/>
-      I design end-to-end solutions that combine business logic, data, and AI,<br/>
-      turning manual work into reliable systems that scale.
+      AI Automation Consultant building AI systems for business operations.<br/>
+      Deterministic rules for the numbers, LLM agents with tool use for the judgement calls,<br/>
+      and a human approving before anything is committed.
     </p>
     <div class="hero-cta">
       <a href="#experience" class="btn btn-primary">View Experience</a>
@@ -612,11 +612,13 @@
         <div class="skill-card-icon">🤖</div>
         <h3>AI & LLMs</h3>
         <div class="skill-tags">
-          <span class="tag">OpenAI API</span>
           <span class="tag">Claude API</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Agents &amp; Tool Use</span>
+          <span class="tag">RAG / Pinecone</span>
           <span class="tag">Prompt Engineering</span>
-          <span class="tag">AI Workflow Automation</span>
-          <span class="tag">LLM Integration</span>
+          <span class="tag">Evals</span>
+          <span class="tag">Human-in-the-Loop</span>
         </div>
       </div>
 
@@ -650,10 +652,12 @@
         <div class="exp-content">
           <div class="exp-role">AI Automation Consultant — Independent Projects</div>
           <p class="exp-desc">
-            Building AI automation and workflow projects while transitioning back to a corporate role focused on Data and AI.
+            Independent practice building AI systems for operations and finance, from the data model and deterministic rules through to agents with tool use, dashboards and evals.
           </p>
           <ul class="exp-achievements">
-            <li>Designed and shipped 3+ production-grade AI automation workflows documented on public portfolio</li>
+            <li>Built OpsFin, an AI operations and finance engine: deterministic rules detect leaks, a Python agent with tool use investigates the ambiguous cases, a human approves before anything posts</li>
+            <li>Designed an evaluation harness over a gold-labelled dataset to tune retrieval and prompts against a measured number instead of intuition</li>
+            <li>Designed and shipped six documented AI and automation projects, published on GitHub</li>
             <li>Combined Power BI dashboards with AI-generated insights for operational reporting and decision support</li>
             <li>Built end-to-end integrations using n8n, Claude/OpenAI APIs, and Google Workspace tools</li>
             <li>Self-hosted n8n infrastructure on Railway with PostgreSQL and Redis for production deployment</li>
@@ -731,7 +735,7 @@
             <li>Designed and implemented a digital cost tracking system enabling per-vehicle costs, in-house vs outsourced comparisons, and consolidated maintenance spending</li>
             <li>Built monthly reporting frameworks with cost analysis for executive decision-making</li>
             <li>Coordinated operations across three sub-areas (machinery, green spaces, landscaping), 25 operational staff total</li>
-            <li>Transitioned to a remote advisory role focused on data analysis, reporting, and process consulting</li>
+            <li>Transitioned to a part-time remote advisory role focused on data analysis, reporting, and process consulting, held in parallel with the Accenture role from Jul 2021</li>
           </ul>
         </div>
       </div>
@@ -744,6 +748,28 @@
     <div class="section-label">What I've built</div>
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🧭</div>
+          <div class="project-links">
+            <a href="https://github.com/Franciscojcdev/opsfin-engine" target="_blank" class="project-link">GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="project-title">OpsFin — AI Operations &amp; Finance Engine</div>
+        <p class="project-desc">
+          Detects revenue leaks and reconciliation anomalies across two domains from one core. Deterministic rules flag the clear-cut cases, a Python agent with tool use investigates the ambiguous ones and proposes a resolution, and a human approves before anything is posted. Includes RAG-grounded categorization, an evals harness over a gold-labelled dataset, Slack escalation and a full audit trail. Built on anonymized data from a real property-management firm.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Claude API</span>
+          <span class="project-tag">Tool Use</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Pinecone</span>
+        </div>
+      </div>
 
       <div class="project-card">
         <div class="project-card-top">
@@ -803,6 +829,45 @@
           <span class="project-tag">OpenAI</span>
           <span class="project-tag">PostgreSQL</span>
           <span class="project-tag">Google Drive</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🩺</div>
+          <div class="project-links">
+            <a href="https://github.com/Franciscojcdev/medicore-clinic-rag" target="_blank" class="project-link">GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="project-title">MediCore — Clinic RAG Assistant</div>
+        <p class="project-desc">
+          Retrieval-augmented assistant that answers patient questions from a clinic's own documents. Semantic search over a Pinecone vector index keeps every answer grounded in source material instead of the model's own recall.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">n8n</span>
+          <span class="project-tag">RAG</span>
+          <span class="project-tag">Pinecone</span>
+          <span class="project-tag">OpenAI</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🛠️</div>
+          <div class="project-links">
+            <a href="https://github.com/Franciscojcdev/n8n-workflow-builder" target="_blank" class="project-link">GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="project-title">n8n Workflow Builder Agent</div>
+        <p class="project-desc">
+          An agent that turns a plain-language description of an automation into a working n8n workflow and deploys it through the n8n REST API. Built to compress the gap between describing a process and having it run.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Claude API</span>
+          <span class="project-tag">n8n REST API</span>
+          <span class="project-tag">Agents</span>
+          <span class="project-tag">Railway</span>
         </div>
       </div>
 
