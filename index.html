@@ -7,14 +7,14 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" content="#0a0a0a">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Francisco Castro · AI Automation Consultant</title>
-  <meta name="description" content="AI Automation Consultant building AI-powered workflows for business operations. n8n, Claude API, Python, and Power BI."/>
+  <title>Francisco Castro · AI Engineer &amp; Consultant</title>
+  <meta name="description" content="AI Engineer and consultant delivering production AI systems for business operations. Python agents with tool use, RAG, evals, Claude API, PostgreSQL and n8n."/>
 
   <!-- Open Graph (LinkedIn, Facebook, WhatsApp) -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://franciscojcdev.github.io/"/>
-  <meta property="og:title" content="Francisco Castro · AI Automation Consultant"/>
-  <meta property="og:description" content="Building AI systems for business operations. Python, Claude API, agents with tool use, n8n and Power BI."/>
+  <meta property="og:title" content="Francisco Castro · AI Engineer &amp; Consultant"/>
+  <meta property="og:description" content="Production AI systems for business operations. Python agents with tool use, RAG, evals, Claude API, PostgreSQL and n8n."/>
   <meta property="og:image" content="https://franciscojcdev.github.io/preview.jpg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -22,8 +22,8 @@
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://franciscojcdev.github.io/"/>
-  <meta name="twitter:title" content="Francisco Castro · AI Automation Consultant"/>
-  <meta name="twitter:description" content="Building AI systems for business operations. Python, Claude API, agents with tool use, n8n and Power BI."/>
+  <meta name="twitter:title" content="Francisco Castro · AI Engineer &amp; Consultant"/>
+  <meta name="twitter:description" content="Production AI systems for business operations. Python agents with tool use, RAG, evals, Claude API, PostgreSQL and n8n."/>
   <meta name="twitter:image" content="https://franciscojcdev.github.io/preview.jpg"/>
 
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -149,7 +149,7 @@
       font-weight: 800;
       line-height: 0.95;
       letter-spacing: -0.03em;
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
       opacity: 0;
       animation: fadeUp 0.7s 0.2s forwards;
     }
@@ -159,15 +159,25 @@
       display: block;
     }
 
+    .hero-role {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--accent2);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.3s forwards;
+    }
+
     .hero-desc {
       font-family: var(--font-mono);
       font-size: 0.95rem;
       color: var(--muted);
-      max-width: 520px;
+      max-width: 560px;
       line-height: 1.8;
       margin-bottom: 3rem;
       opacity: 0;
-      animation: fadeUp 0.7s 0.35s forwards;
+      animation: fadeUp 0.7s 0.4s forwards;
     }
 
     .hero-cta {
@@ -436,6 +446,17 @@
       color: var(--accent);
     }
 
+    .project-note {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: #4a4a4a;
+      padding: 0.4rem 0.8rem;
+      border: 1px dashed var(--border);
+      border-radius: 2px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     .project-title {
       font-size: 1.15rem;
       font-weight: 700;
@@ -568,13 +589,14 @@
     <div class="hero-glow"></div>
     <div class="hero-tag">Available for remote opportunities</div>
     <h1>Francisco<span>Castro.</span></h1>
+    <div class="hero-role">AI Engineer &amp; Consultant</div>
     <p class="hero-desc">
-      AI Automation Consultant building AI systems for business operations.<br/>
+      I build and deliver production AI systems for business operations.<br/>
       Deterministic rules for the numbers, LLM agents with tool use for the judgement calls,<br/>
       and a human approving before anything is committed.
     </p>
     <div class="hero-cta">
-      <a href="#experience" class="btn btn-primary">View Experience</a>
+      <a href="#projects" class="btn btn-primary">View Work</a>
       <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
     <div class="hero-scroll">Scroll to explore</div>
@@ -587,34 +609,8 @@
     <div class="skills-grid">
 
       <div class="skill-card">
-        <div class="skill-card-icon">📊</div>
-        <h3>Business & Analysis</h3>
-        <div class="skill-tags">
-          <span class="tag">Business Analysis</span>
-          <span class="tag">Process Optimization</span>
-          <span class="tag">Requirements Gathering</span>
-          <span class="tag">Stakeholder Mgmt</span>
-          <span class="tag">KPI Tracking</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-icon">⚙️</div>
-        <h3>Data & Automation</h3>
-        <div class="skill-tags">
-          <span class="tag">Power BI</span>
-          <span class="tag">Power Query</span>
-          <span class="tag">Excel Advanced</span>
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">n8n</span>
-          <span class="tag">API Integrations</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
         <div class="skill-card-icon">🤖</div>
-        <h3>AI & LLMs</h3>
+        <h3>AI Engineering</h3>
         <div class="skill-tags">
           <span class="tag">Claude API</span>
           <span class="tag">OpenAI API</span>
@@ -627,120 +623,47 @@
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">💻</div>
-        <h3>Technical Tools</h3>
+        <div class="skill-card-icon">🧱</div>
+        <h3>Engineering &amp; Data</h3>
         <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">React</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Data Modeling</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon">⚙️</div>
+        <h3>Automation &amp; Infra</h3>
+        <div class="skill-tags">
+          <span class="tag">n8n</span>
+          <span class="tag">API Integrations</span>
+          <span class="tag">Google Workspace APIs</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Railway</span>
+          <span class="tag">Vercel</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-icon">📊</div>
+        <h3>Business &amp; Analysis</h3>
+        <div class="skill-tags">
+          <span class="tag">Business Analysis</span>
+          <span class="tag">Process Optimization</span>
+          <span class="tag">Requirements Gathering</span>
+          <span class="tag">Stakeholder Mgmt</span>
+          <span class="tag">KPI Tracking</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Power Query</span>
           <span class="tag">SAP</span>
           <span class="tag">Salesforce</span>
-          <span class="tag">Jira / Agile</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">React</span>
-          <span class="tag">HTML/CSS</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Where I've been</div>
-    <h2 class="section-title">Experience</h2>
-    <div class="exp-list">
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-period">Feb 2026 – Present</div>
-          <div class="exp-company">Independent · Remote</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">AI Automation Consultant — Independent Projects</div>
-          <p class="exp-desc">
-            Independent practice building AI systems for operations and finance, from the data model and deterministic rules through to agents with tool use, dashboards and evals.
-          </p>
-          <ul class="exp-achievements">
-            <li>Built OpsFin, an AI operations and finance engine: deterministic rules detect leaks, a Python agent with tool use investigates the ambiguous cases, a human approves before anything posts</li>
-            <li>Designed an evaluation harness over a gold-labelled dataset to tune retrieval and prompts against a measured number instead of intuition</li>
-            <li>Designed and shipped six documented AI and automation projects, published on GitHub</li>
-            <li>Combined Power BI dashboards with AI-generated insights for operational reporting and decision support</li>
-            <li>Built end-to-end integrations using n8n, Claude/OpenAI APIs, and Google Workspace tools</li>
-            <li>Self-hosted n8n infrastructure on Railway with PostgreSQL and Redis for production deployment</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-period">Jan 2024 – Jan 2026</div>
-          <div class="exp-company">The Star Entertainment Group · Australia</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Senior AV Technician — Acting Team Lead</div>
-          <p class="exp-desc">
-            Operated within the AV department of one of Australia's largest entertainment groups, supporting premium corporate events and large-scale productions. Acted as second-in-command of a 12-person team.
-          </p>
-          <ul class="exp-achievements">
-            <li>Delivered AV operations for premium corporate clients across hotels, casino venues, and large-scale productions</li>
-            <li>Acted as team lead in the manager's absence, supervising a 12-person AV team and coordinating daily operations</li>
-            <li>Managed stakeholder relationships with executives, event planners, performers, and demanding clients</li>
-            <li>Coordinated cross-functional work with marketing, IT, and network teams across multiple venues</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-period">Jan 2023 – Dec 2023</div>
-          <div class="exp-company">Encore · Sydney, Australia</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">AV Technician</div>
-          <p class="exp-desc">
-            First AV role in Australia, working with Encore (Australia's largest event technology provider) across major Sydney venues during my initial year in the country.
-          </p>
-          <ul class="exp-achievements">
-            <li>Delivered AV operations across 5-star hotels and prestigious venues in Sydney</li>
-            <li>Collaborated with event planners, venue staff, and clients to deliver tailored AV solutions</li>
-            <li>Provided real-time technical support during events under tight timelines</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-period">Jul 2021 – Dec 2022</div>
-          <div class="exp-company">Accenture · Technology Consulting</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Business Analyst</div>
-          <p class="exp-desc">
-            Joined as Project Control Services Associate and progressed to Business Analyst within the Technology Consulting practice, supporting sales operations and reporting for international corporate clients.
-          </p>
-          <ul class="exp-achievements">
-            <li>Led automation initiatives including a Power Query pipeline connecting to Salesforce that reduced weekly report preparation from ~1 hour to under 10 minutes</li>
-            <li>Selected to join the firm's internal Power Query initiative, designing and delivering training sessions across teams</li>
-            <li>Designed and built data-driven reporting solutions using Power BI, Excel, and Power Query</li>
-            <li>Maintained data consistency across enterprise systems (SAP, Salesforce, Avature)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-period">Dec 2019 – Jul 2022</div>
-          <div class="exp-company">Grupo Edisur · Córdoba, Argentina</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Operations Analyst</div>
-          <p class="exp-desc">
-            Joined a newly created maintenance and operations business unit at one of Córdoba's leading real estate developers. The role evolved from operational coordination to internal advisory and data-driven consulting.
-          </p>
-          <ul class="exp-achievements">
-            <li>Designed and implemented a digital cost tracking system enabling per-vehicle costs, in-house vs outsourced comparisons, and consolidated maintenance spending</li>
-            <li>Built monthly reporting frameworks with cost analysis for executive decision-making</li>
-            <li>Coordinated operations across three sub-areas (machinery, green spaces, landscaping), 25 operational staff total</li>
-            <li>Transitioned to a part-time remote advisory role focused on data analysis, reporting, and process consulting, held in parallel with the Accenture role from Jul 2021</li>
-          </ul>
         </div>
       </div>
 
@@ -752,6 +675,27 @@
     <div class="section-label">What I've built</div>
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🌾</div>
+          <div class="project-links">
+            <span class="project-note">Client · Private</span>
+          </div>
+        </div>
+        <div class="project-title">Operations System for an Agricultural Client</div>
+        <p class="project-desc">
+          A Next.js application over Supabase running the day-to-day operations of a working agricultural business. Row-level security and per-user authentication so every record traces back to a person, a full audit trail, and document storage. Freight documents are parsed in the browser with no model involved, so structured data gets captured without manual entry and without paying for inference on a problem that was already solved. Shipped with separate production and demo environments, a custom domain, and automated encrypted backups.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Supabase</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">Row-Level Security</span>
+          <span class="project-tag">pdfjs</span>
+          <span class="project-tag">Vercel</span>
+        </div>
+      </div>
 
       <div class="project-card">
         <div class="project-card-top">
@@ -777,41 +721,40 @@
 
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">🤖</div>
+          <div class="project-icon">🛠️</div>
           <div class="project-links">
-            <a href="https://github.com/Franciscojcdev/ai-news-digest-n8n" target="_blank" class="project-link">GitHub →</a>
+            <a href="https://github.com/Franciscojcdev/n8n-workflow-builder" target="_blank" class="project-link">GitHub &rarr;</a>
           </div>
         </div>
-        <div class="project-title">AI News Digest — Daily Automated Summary</div>
+        <div class="project-title">n8n Workflow Builder Agent</div>
         <p class="project-desc">
-          Automated workflow that fetches daily AI & tech news from 3 RSS feeds (Hacker News, VentureBeat, MIT Tech Review), analyzes them with Claude AI, and delivers a curated 7-story digest to your inbox every morning at 7am.
+          An agent that turns a plain-language description of an automation into a working n8n workflow and deploys it through the n8n REST API. Built to compress the gap between describing a process and having it run.
         </p>
         <div class="project-tags">
-          <span class="project-tag">n8n</span>
-          <span class="project-tag">Claude AI</span>
-          <span class="project-tag">RSS</span>
-          <span class="project-tag">Gmail API</span>
+          <span class="project-tag">Claude API</span>
+          <span class="project-tag">n8n REST API</span>
+          <span class="project-tag">Agents</span>
           <span class="project-tag">Railway</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">📊</div>
+          <div class="project-icon">🩺</div>
           <div class="project-links">
-            <a href="https://github.com/Franciscojcdev/kpi-report-generator-n8n" target="_blank" class="project-link">GitHub →</a>
+            <a href="https://github.com/Franciscojcdev/medicore-clinic-rag" target="_blank" class="project-link">GitHub &rarr;</a>
           </div>
         </div>
-        <div class="project-title">KPI Operations Report Generator</div>
+        <div class="project-title">MediCore — Clinic RAG Assistant</div>
         <p class="project-desc">
-          On-demand workflow that reads monthly KPI data from Google Sheets, sends it to Claude AI for deep analysis, and generates a professional executive HTML report with trends, anomalies, and actionable recommendations, delivered by email.
+          Retrieval-augmented assistant that answers patient questions from a clinic's own documents. Semantic search over a Pinecone vector index keeps every answer grounded in source material instead of the model's own recall.
         </p>
         <div class="project-tags">
           <span class="project-tag">n8n</span>
-          <span class="project-tag">Claude AI</span>
-          <span class="project-tag">Google Sheets</span>
-          <span class="project-tag">Gmail API</span>
-          <span class="project-tag">Railway</span>
+          <span class="project-tag">RAG</span>
+          <span class="project-tag">Pinecone</span>
+          <span class="project-tag">OpenAI</span>
+          <span class="project-tag">PostgreSQL</span>
         </div>
       </div>
 
@@ -838,40 +781,147 @@
 
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">🩺</div>
+          <div class="project-icon">📊</div>
           <div class="project-links">
-            <a href="https://github.com/Franciscojcdev/medicore-clinic-rag" target="_blank" class="project-link">GitHub &rarr;</a>
+            <a href="https://github.com/Franciscojcdev/kpi-report-generator-n8n" target="_blank" class="project-link">GitHub →</a>
           </div>
         </div>
-        <div class="project-title">MediCore — Clinic RAG Assistant</div>
+        <div class="project-title">KPI Operations Report Generator</div>
         <p class="project-desc">
-          Retrieval-augmented assistant that answers patient questions from a clinic's own documents. Semantic search over a Pinecone vector index keeps every answer grounded in source material instead of the model's own recall.
+          On-demand workflow that reads monthly KPI data from Google Sheets, sends it to Claude for analysis, and generates an executive HTML report with trends, anomalies and actionable recommendations, delivered by email.
         </p>
         <div class="project-tags">
           <span class="project-tag">n8n</span>
-          <span class="project-tag">RAG</span>
-          <span class="project-tag">Pinecone</span>
-          <span class="project-tag">OpenAI</span>
-          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">Claude API</span>
+          <span class="project-tag">Google Sheets</span>
+          <span class="project-tag">Gmail API</span>
+          <span class="project-tag">Railway</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-icon">🛠️</div>
+          <div class="project-icon">📰</div>
           <div class="project-links">
-            <a href="https://github.com/Franciscojcdev/n8n-workflow-builder" target="_blank" class="project-link">GitHub &rarr;</a>
+            <a href="https://github.com/Franciscojcdev/ai-news-digest-n8n" target="_blank" class="project-link">GitHub →</a>
           </div>
         </div>
-        <div class="project-title">n8n Workflow Builder Agent</div>
+        <div class="project-title">AI News Digest — Daily Automated Summary</div>
         <p class="project-desc">
-          An agent that turns a plain-language description of an automation into a working n8n workflow and deploys it through the n8n REST API. Built to compress the gap between describing a process and having it run.
+          Automated workflow that pulls AI and tech news from three RSS feeds every morning, filters and ranks them with Claude, and delivers a curated seven-story digest by email at 7am.
         </p>
         <div class="project-tags">
+          <span class="project-tag">n8n</span>
           <span class="project-tag">Claude API</span>
-          <span class="project-tag">n8n REST API</span>
-          <span class="project-tag">Agents</span>
+          <span class="project-tag">RSS</span>
+          <span class="project-tag">Gmail API</span>
           <span class="project-tag">Railway</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Where I've been</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Aug 2026 – Present</div>
+          <div class="exp-company">ICARO / FCEFyN-UNC · Remote</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">AI &amp; Automation Instructor</div>
+          <p class="exp-desc">
+            Teaching Applied AI and Automation in a professional training program certified by ICARO and the National University of Córdoba.
+          </p>
+          <ul class="exp-achievements">
+            <li>Deliver live sessions on generative AI tools, prompt engineering and low-code automation platforms</li>
+            <li>Guide students through system-integration concepts: REST APIs, webhooks, JSON and authentication</li>
+            <li>Mentor participants through their final integrative project, from scoping to evaluation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Feb 2026 – Present</div>
+          <div class="exp-company">Independent · Remote</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">AI Engineer &amp; Consultant — Independent Projects</div>
+          <p class="exp-desc">
+            Independent practice turning manual, spreadsheet-based operations into production systems. Engagements run end to end: discovery with the client, data model, build, deployment and handover.
+          </p>
+          <ul class="exp-achievements">
+            <li>Shipped a production management system for an agricultural client on Next.js and Supabase, with row-level security, per-user authentication, a full audit trail and automated encrypted backups</li>
+            <li>Built OpsFin, an AI operations and finance engine: deterministic rules detect leaks, a Python agent with tool use investigates the ambiguous cases, a human approves before anything posts</li>
+            <li>Designed an evaluation harness over a gold-labelled dataset to tune retrieval and prompts against a measured number instead of intuition</li>
+            <li>Led AI-assisted process redesign and KPI tracking for a real estate company in Córdoba, from requirements gathering through deployment</li>
+            <li>Built end-to-end integrations using n8n, Claude and OpenAI APIs, and Google Workspace tools</li>
+            <li>Self-hosted n8n infrastructure on Railway with PostgreSQL and Redis, running scheduled and event-driven pipelines in production</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Jan 2023 – Jan 2026</div>
+          <div class="exp-company">The Star Entertainment Group / Encore · Australia</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Operations Specialist — Acting Team Lead</div>
+          <p class="exp-desc">
+            Three years in operations roles at large corporate venues in Australia, supporting premium corporate events and large-scale productions. Second-in-command of a 12-person team at one of the country's largest entertainment and hospitality groups.
+          </p>
+          <ul class="exp-achievements">
+            <li>Acted as team lead in the manager's absence, supervising a 12-person team across shifts and coordinating daily operations</li>
+            <li>Managed stakeholder relationships with executives, event organizers and demanding corporate clients under tight timelines</li>
+            <li>Coordinated cross-functional work with marketing, IT and network teams across multiple venues</li>
+            <li>Oversaw operational planning: scheduling, stock management and calendars</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Jul 2021 – Dec 2022</div>
+          <div class="exp-company">Accenture · Technology Consulting</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Business Analyst</div>
+          <p class="exp-desc">
+            Joined as Project Control Services Associate and progressed to Business Analyst within the Technology Consulting practice, supporting sales operations and reporting for international corporate clients.
+          </p>
+          <ul class="exp-achievements">
+            <li>Led automation initiatives including a Power Query pipeline connecting to Salesforce that reduced weekly report preparation from ~1 hour to under 10 minutes</li>
+            <li>Selected to join the firm's internal Power Query initiative, designing and delivering training sessions across teams</li>
+            <li>Designed and built data-driven reporting solutions using SQL, Power BI, Excel and Power Query</li>
+            <li>Maintained data consistency across enterprise systems (SAP, Salesforce, Avature)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Dec 2019 – Jul 2022</div>
+          <div class="exp-company">Grupo Edisur · Córdoba, Argentina</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Operations Analyst</div>
+          <p class="exp-desc">
+            Joined a newly created maintenance and operations business unit at one of Córdoba's leading real estate developers. The role evolved from operational coordination to internal advisory and data-driven consulting.
+          </p>
+          <ul class="exp-achievements">
+            <li>Designed and implemented a digital cost tracking system enabling per-vehicle costs, in-house vs outsourced comparisons, and consolidated maintenance spending</li>
+            <li>Built monthly reporting frameworks with operational cost analysis for executive decision-making, modelling the underlying data in SQL and Excel</li>
+            <li>Supported capital allocation decisions with data-driven analysis of machinery investments, maintenance cycles and operating costs</li>
+            <li>Coordinated operations across three sub-areas (machinery, green spaces, landscaping), 25 operational staff total</li>
+            <li>Transitioned to a part-time remote advisory role focused on data analysis, reporting and process consulting, held in parallel with the Accenture role from Jul 2021</li>
+          </ul>
         </div>
       </div>
 
@@ -885,7 +935,7 @@
     <div class="contact-grid">
       <div>
         <p class="contact-text">
-          I'm currently open to opportunities in AI Automation, workflow design, and business operations. Whether you have a project in mind or just want to connect, feel free to reach out.
+          I'm open to full-time roles, contract work and consulting partnerships in AI engineering, automation and business operations. Whether you have a project in mind or just want to connect, feel free to reach out.
         </p>
         <a href="mailto:Francisco.j.castro@outlook.com" class="btn btn-primary">Send me an email</a>
       </div>
